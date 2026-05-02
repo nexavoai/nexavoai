@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nexavo AI News & Insights — Salesforce, Data Cloud, Agentforce, and AI thought leadership." />
+  <title>News & Insights — Nexavo AI</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'><rect width='36' height='36' rx='10' fill='url(%23g)'/><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%2300D4FF'/><stop offset='1' stop-color='%236366F1'/></linearGradient></defs><text x='8' y='26' font-size='20' font-weight='900' fill='white' font-family='sans-serif'>N</text></svg>" />
+  <style>
+    .blog-thumb-1 { background: linear-gradient(135deg, #0D1A2E, #0C1018); }
+    .blog-thumb-2 { background: linear-gradient(135deg, #14101F, #0C1018); }
+    .blog-thumb-3 { background: linear-gradient(135deg, #0A1F15, #0C1018); }
+    .blog-thumb-4 { background: linear-gradient(135deg, #1A0D1A, #0C1018); }
+    .blog-thumb-5 { background: linear-gradient(135deg, #1A150D, #0C1018); }
+    .blog-thumb-6 { background: linear-gradient(135deg, #0D1E1A, #0C1018); }
+
+    .blog-thumb-svg {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .category-pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 16px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+    }
+    .category-pill:hover, .category-pill.active {
+      background: var(--cyan-dim);
+      border-color: rgba(0,212,255,0.3);
+      color: var(--cyan);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-mark">N</div>
+          Nexavo <span class="text-accent">AI</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="news.html" class="nav-link">News</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+          <a href="contact.html" class="btn btn-primary">Book a Demo →</a>
+          <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="products.html" class="nav-link">Products</a>
+    <a href="news.html" class="nav-link">News</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="position:relative;overflow:hidden;">
+    <div class="grid-bg"></div>
+    <div class="orb orb-indigo" style="width:400px;height:400px;top:-80px;right:0;opacity:0.4;"></div>
+    <div class="container">
+      <div style="max-width:680px;">
+        <div class="section-label" style="animation:fadeSlideUp 0.5s ease both;"><span>News & Insights</span></div>
+        <h1 class="display-xl mb-24" style="animation:fadeSlideUp 0.5s 0.1s ease both;">
+          The Nexavo<br>
+          <span class="gradient-text">Intelligence Brief</span>
+        </h1>
+        <p class="body-lg text-muted" style="animation:fadeSlideUp 0.5s 0.2s ease both;">
+          Deep dives, practical guides, and original thinking on Salesforce, Data Cloud, Agentforce, and the future of AI-powered CRM.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED POST -->
+  <section class="section" style="padding-top:40px;">
+    <div class="container">
+
+      <!-- Category Filter -->
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:48px;" class="reveal">
+        <button class="category-pill active">All Posts</button>
+        <button class="category-pill">Agentforce</button>
+        <button class="category-pill">Data Cloud</button>
+        <button class="category-pill">Salesforce Dev</button>
+        <button class="category-pill">AI Strategy</button>
+        <button class="category-pill">ISV</button>
+      </div>
+
+      <!-- Featured Article -->
+      <div style="background:var(--bg-surface);border:1px solid var(--border-subtle);border-radius:var(--radius-xl);overflow:hidden;margin-bottom:48px;display:grid;grid-template-columns:1fr 1.2fr;gap:0;" class="reveal">
+        <div style="padding:48px;display:flex;flex-direction:column;justify-content:space-between;">
+          <div>
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;">
+              <span class="tag tag-cyan">Featured</span>
+              <span class="tag tag-white">Agentforce</span>
+              <time style="font-size:12px;color:var(--text-muted);font-family:var(--font-mono);">Dec 12, 2024</time>
+            </div>
+            <h2 class="display-md mb-20" style="line-height:1.2;">
+              Agentforce in Production: What 6 Months of Real Deployments Taught Us
+            </h2>
+            <p class="body-lg text-muted mb-32">
+              We've now deployed Agentforce in production for 8 enterprise clients across financial services, healthcare, and technology. Here's what the official documentation doesn't tell you — the real edge cases, the architecture decisions that matter, and how to actually get to value fast.
+            </p>
+          </div>
+          <div>
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;">
+              <div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--cyan),var(--indigo));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:#fff;">A</div>
+              <div>
+                <p style="font-size:14px;font-weight:500;">Nexavo AI Team</p>
+                <p style="font-size:12px;color:var(--text-muted);">14 min read</p>
+              </div>
+            </div>
+            <a href="#" class="btn btn-primary btn-lg">
+              Read Article
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="blog-thumb-1" style="min-height:400px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+          <!-- Abstract visual -->
+          <svg viewBox="0 0 400 300" style="width:100%;max-width:360px;opacity:0.7;" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="200" cy="150" r="80" stroke="rgba(0,212,255,0.3)" stroke-width="1.5" stroke-dasharray="6 10"/>
+            <circle cx="200" cy="150" r="120" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
+            <circle cx="200" cy="150" r="50" fill="rgba(0,212,255,0.05)" stroke="rgba(0,212,255,0.4)" stroke-width="1"/>
+            <circle cx="200" cy="70" r="12" fill="rgba(0,212,255,0.2)" stroke="#00D4FF" stroke-width="1.5"/>
+            <circle cx="280" cy="195" r="10" fill="rgba(99,102,241,0.2)" stroke="#6366F1" stroke-width="1.5"/>
+            <circle cx="120" cy="195" r="10" fill="rgba(0,212,255,0.15)" stroke="#00D4FF" stroke-width="1.5"/>
+            <line x1="200" y1="150" x2="200" y2="70" stroke="rgba(0,212,255,0.4)" stroke-width="1.5"/>
+            <line x1="200" y1="150" x2="280" y2="195" stroke="rgba(99,102,241,0.4)" stroke-width="1.5"/>
+            <line x1="200" y1="150" x2="120" y2="195" stroke="rgba(0,212,255,0.3)" stroke-width="1.5"/>
+            <text x="175" y="158" fill="rgba(0,212,255,0.8)" font-size="16" font-weight="bold" font-family="monospace">Agent</text>
+            <text x="165" y="57" fill="rgba(0,212,255,0.7)" font-size="10" font-family="monospace">CRM Data</text>
+            <text x="267" y="218" fill="rgba(99,102,241,0.7)" font-size="10" font-family="monospace">Action</text>
+            <text x="100" y="218" fill="rgba(0,212,255,0.6)" font-size="10" font-family="monospace">Context</text>
+          </svg>
+          <div style="position:absolute;bottom:0;left:0;right:0;height:60%;background:linear-gradient(0deg,rgba(13,26,46,0.8),transparent);"></div>
+        </div>
+      </div>
+
+      <!-- ARTICLE GRID -->
+      <div class="grid-3" style="gap:24px;margin-bottom:40px;">
+
+        <!-- Article 1 -->
+        <div class="blog-card reveal">
+          <div class="blog-card-thumb blog-thumb-2">
+            <div class="blog-thumb-svg">
+              <svg viewBox="0 0 200 140" style="width:160px;" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="20" y="20" width="160" height="100" rx="8" stroke="rgba(99,102,241,0.3)" stroke-width="1"/>
+                <rect x="30" y="35" width="60" height="8" rx="2" fill="rgba(99,102,241,0.3)"/>
+                <rect x="30" y="52" width="40" height="6" rx="2" fill="rgba(99,102,241,0.2)"/>
+                <rect x="30" y="72" width="140" height="4" rx="2" fill="rgba(99,102,241,0.15)"/>
+                <rect x="30" y="84" width="120" height="4" rx="2" fill="rgba(99,102,241,0.1)"/>
+                <rect x="30" y="96" width="80" height="4" rx="2" fill="rgba(99,102,241,0.08)"/>
+                <circle cx="155" cy="40" r="15" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.4)" stroke-width="1"/>
+                <path d="M148 40 L155 33 L162 40 L155 47 Z" fill="rgba(99,102,241,0.6)"/>
+              </svg>
+            </div>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="tag tag-indigo" style="font-size:10px;padding:3px 8px;">Data Cloud</span>
+              <time>Nov 28, 2024</time>
+              <span style="font-size:12px;color:var(--text-muted);">8 min</span>
+            </div>
+            <h3 style="font-size:18px;font-family:var(--font-display);font-weight:700;line-height:1.3;margin-bottom:12px;">
+              Building a Real-Time CDP on Salesforce Data Cloud: A Technical Deep Dive
+            </h3>
+            <p class="body-sm text-muted mb-16">
+              Identity resolution, unified profiles, and real-time activation — everything you need to build a production-grade CDP without leaving the Salesforce ecosystem.
+            </p>
+            <a href="#" style="font-size:14px;color:var(--cyan);font-weight:500;display:flex;align-items:center;gap:6px;">
+              Read more
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="blog-card reveal reveal-delay-1">
+          <div class="blog-card-thumb blog-thumb-3">
+            <div class="blog-thumb-svg">
+              <svg viewBox="0 0 200 140" style="width:160px;" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="15" y="30" width="170" height="80" rx="6" fill="rgba(16,185,129,0.05)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+                <line x1="15" y1="60" x2="185" y2="60" stroke="rgba(16,185,129,0.15)" stroke-width="1"/>
+                <line x1="15" y1="80" x2="185" y2="80" stroke="rgba(16,185,129,0.1)" stroke-width="1"/>
+                <rect x="25" y="37" width="20" height="16" rx="2" fill="rgba(16,185,129,0.2)"/>
+                <rect x="55" y="37" width="20" height="16" rx="2" fill="rgba(16,185,129,0.15)"/>
+                <rect x="85" y="37" width="20" height="16" rx="2" fill="rgba(16,185,129,0.25)"/>
+                <path d="M25 90 L55 75 L85 85 L115 65 L145 70 L175 55" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="115" cy="65" r="4" fill="#10B981"/>
+              </svg>
+            </div>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="tag tag-white" style="font-size:10px;padding:3px 8px;">AI Strategy</span>
+              <time>Nov 15, 2024</time>
+              <span style="font-size:12px;color:var(--text-muted);">6 min</span>
+            </div>
+            <h3 style="font-size:18px;font-family:var(--font-display);font-weight:700;line-height:1.3;margin-bottom:12px;">
+              Measuring ROI on Salesforce AI: The Metrics That Actually Matter
+            </h3>
+            <p class="body-sm text-muted mb-16">
+              Revenue influenced, time-to-action reduction, and pipeline conversion — how to build an AI ROI framework your CFO will actually believe.
+            </p>
+            <a href="#" style="font-size:14px;color:var(--cyan);font-weight:500;display:flex;align-items:center;gap:6px;">
+              Read more
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="blog-card reveal reveal-delay-2">
+          <div class="blog-card-thumb blog-thumb-4">
+            <div class="blog-thumb-svg">
+              <svg viewBox="0 0 200 140" style="width:160px;" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="20" y="20" width="70" height="100" rx="6" stroke="rgba(168,85,247,0.3)" stroke-width="1" fill="rgba(168,85,247,0.03)"/>
+                <rect x="110" y="20" width="70" height="100" rx="6" stroke="rgba(168,85,247,0.2)" stroke-width="1" fill="rgba(168,85,247,0.02)"/>
+                <path d="M90 70 L110 70" stroke="rgba(168,85,247,0.6)" stroke-width="2" stroke-dasharray="3 3"/>
+                <circle cx="90" cy="70" r="4" fill="rgba(168,85,247,0.6)"/>
+                <circle cx="110" cy="70" r="4" fill="rgba(168,85,247,0.6)"/>
+                <rect x="30" y="35" width="50" height="4" rx="2" fill="rgba(168,85,247,0.4)"/>
+                <rect x="30" y="48" width="36" height="4" rx="2" fill="rgba(168,85,247,0.25)"/>
+                <rect x="30" y="60" width="50" height="4" rx="2" fill="rgba(168,85,247,0.2)"/>
+                <rect x="120" y="35" width="50" height="4" rx="2" fill="rgba(168,85,247,0.3)"/>
+                <rect x="120" y="48" width="36" height="4" rx="2" fill="rgba(168,85,247,0.2)"/>
+              </svg>
+            </div>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="tag tag-white" style="font-size:10px;padding:3px 8px;color:#A855F7;border-color:rgba(168,85,247,0.3);background:rgba(168,85,247,0.1);">ISV</span>
+              <time>Nov 02, 2024</time>
+              <span style="font-size:12px;color:var(--text-muted);">11 min</span>
+            </div>
+            <h3 style="font-size:18px;font-family:var(--font-display);font-weight:700;line-height:1.3;margin-bottom:12px;">
+              The AppExchange Security Review: Everything They Don't Tell You
+            </h3>
+            <p class="body-sm text-muted mb-16">
+              Practical lessons from 12+ security reviews — the common pitfalls, the things that get auto-rejected, and how to pass on the first attempt.
+            </p>
+            <a href="#" style="font-size:14px;color:var(--cyan);font-weight:500;display:flex;align-items:center;gap:6px;">
+              Read more
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Article 4 -->
+        <div class="blog-card reveal">
+          <div class="blog-card-thumb blog-thumb-5">
+            <div class="blog-thumb-svg">
+              <svg viewBox="0 0 200 140" style="width:160px;" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="70" r="40" stroke="rgba(0,212,255,0.3)" stroke-width="1.5"/>
+                <circle cx="100" cy="70" r="25" fill="rgba(0,212,255,0.05)" stroke="rgba(0,212,255,0.4)" stroke-width="1"/>
+                <text x="90" y="75" fill="rgba(0,212,255,0.8)" font-size="14" font-weight="bold" font-family="monospace">AI</text>
+                <path d="M100 30 Q130 40 130 70 Q130 100 100 110 Q70 100 70 70 Q70 40 100 30" stroke="rgba(0,212,255,0.15)" stroke-width="1" stroke-dasharray="4 6"/>
+                <circle cx="100" cy="30" r="5" fill="#00D4FF" opacity="0.7"/>
+                <circle cx="130" cy="70" r="5" fill="#6366F1" opacity="0.7"/>
+                <circle cx="100" cy="110" r="5" fill="#00D4FF" opacity="0.6"/>
+                <circle cx="70" cy="70" r="5" fill="#6366F1" opacity="0.6"/>
+              </svg>
+            </div>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="tag tag-cyan" style="font-size:10px;padding:3px 8px;">Agentforce</span>
+              <time>Oct 22, 2024</time>
+              <span style="font-size:12px;color:var(--text-muted);">9 min</span>
+            </div>
+            <h3 style="font-size:18px;font-family:var(--font-display);font-weight:700;line-height:1.3;margin-bottom:12px;">
+              Designing Multi-Agent Workflows in Agentforce: Patterns and Anti-Patterns
+            </h3>
+            <p class="body-sm text-muted mb-16">
+              How to architect agent-to-agent communication, handle failure states, and build observable AI pipelines that your team can actually debug.
+            </p>
+            <a href="#" style="font-size:14px;color:var(--cyan);font-weight:500;display:flex;align-items:center;gap:6px;">
+              Read more
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Article 5 -->
+        <div class="blog-card reveal reveal-delay-1">
+          <div class="blog-card-thumb blog-thumb-6">
+            <div class="blog-thumb-svg">
+              <svg viewBox="0 0 200 140" style="width:160px;" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="20" y="20" width="160" height="100" rx="8" fill="rgba(16,185,129,0.03)" stroke="rgba(16,185,129,0.2)" stroke-width="1"/>
+                <rect x="30" y="35" width="30" height="70" rx="3" fill="rgba(16,185,129,0.2)"/>
+                <rect x="70" y="50" width="30" height="55" rx="3" fill="rgba(16,185,129,0.3)"/>
+                <rect x="110" y="40" width="30" height="65" rx="3" fill="rgba(16,185,129,0.25)"/>
+                <rect x="150" y="30" width="20" height="75" rx="3" fill="rgba(16,185,129,0.4)"/>
+                <line x1="20" y1="110" x2="180" y2="110" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+              </svg>
+            </div>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="tag tag-white" style="font-size:10px;padding:3px 8px;">Salesforce Dev</span>
+              <time>Oct 10, 2024</time>
+              <span style="font-size:12px;color:var(--text-muted);">7 min</span>
+            </div>
+            <h3 style="font-size:18px;font-family:var(--font-display);font-weight:700;line-height:1.3;margin-bottom:12px;">
+              LWC Performance Optimization: From 4s Load Times to Under 800ms
+            </h3>
+            <p class="body-sm text-muted mb-16">
+              Wire adapters, lazy loading, and the cacheable=true trap — the concrete techniques we used to 5x component performance in production orgs.
+            </p>
+            <a href="#" style="font-size:14px;color:var(--cyan);font-weight:500;display:flex;align-items:center;gap:6px;">
+              Read more
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Article 6 -->
+        <div class="blog-card reveal reveal-delay-2">
+          <div class="blog-card-thumb blog-thumb-1">
+            <div class="blog-thumb-svg">
+              <svg viewBox="0 0 200 140" style="width:160px;" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="30" y="25" width="140" height="90" rx="8" fill="rgba(0,212,255,0.04)" stroke="rgba(0,212,255,0.2)" stroke-width="1"/>
+                <rect x="42" y="40" width="40" height="6" rx="3" fill="rgba(0,212,255,0.3)"/>
+                <rect x="42" y="55" width="116" height="3" rx="1.5" fill="rgba(0,212,255,0.15)"/>
+                <rect x="42" y="65" width="100" height="3" rx="1.5" fill="rgba(0,212,255,0.1)"/>
+                <rect x="42" y="75" width="80" height="3" rx="1.5" fill="rgba(0,212,255,0.08)"/>
+                <rect x="42" y="90" width="60" height="18" rx="4" fill="rgba(0,212,255,0.2)" stroke="rgba(0,212,255,0.4)" stroke-width="1"/>
+                <text x="52" y="103" fill="rgba(0,212,255,0.9)" font-size="9" font-family="monospace">Get Started</text>
+              </svg>
+            </div>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="tag tag-indigo" style="font-size:10px;padding:3px 8px;">Data Cloud</span>
+              <time>Sep 28, 2024</time>
+              <span style="font-size:12px;color:var(--text-muted);">5 min</span>
+            </div>
+            <h3 style="font-size:18px;font-family:var(--font-display);font-weight:700;line-height:1.3;margin-bottom:12px;">
+              Data Cloud vs. Traditional CRM Data: When to Use Which (And Why)
+            </h3>
+            <p class="body-sm text-muted mb-16">
+              A decision framework for architects: when Data Cloud adds value, when it's overkill, and the architectural signals that tell you which way to go.
+            </p>
+            <a href="#" style="font-size:14px;color:var(--cyan);font-weight:500;display:flex;align-items:center;gap:6px;">
+              Read more
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Load More -->
+      <div style="text-align:center;" class="reveal">
+        <button class="btn btn-secondary btn-lg">Load More Articles</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="cta-strip">
+    <div class="container">
+      <div class="text-center reveal" style="max-width:540px;margin:0 auto;">
+        <div class="section-label" style="justify-content:center;"><span>Stay Sharp</span></div>
+        <h2 class="display-md mb-16">The Nexavo Intelligence Brief</h2>
+        <p class="body-lg text-muted mb-32">
+          Bi-weekly deep dives on Salesforce AI, architecture patterns, and ISV strategy. No fluff. Join 2,000+ Salesforce professionals.
+        </p>
+        <div style="display:flex;gap:12px;max-width:440px;margin:0 auto;">
+          <input type="email" placeholder="you@company.com" class="form-input" style="flex:1;" />
+          <button class="btn btn-primary btn-lg" style="white-space:nowrap;">Subscribe</button>
+        </div>
+        <p class="body-sm text-muted" style="margin-top:12px;">No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="display:inline-flex;margin-bottom:16px;">
+            <div class="logo-mark">N</div>
+            Nexavo <span class="text-accent" style="margin-left:4px;">AI</span>
+          </a>
+          <p>AI-first Salesforce Solutions. We build intelligent CRM ecosystems powered by Data Cloud, Agentforce, and custom AI.</p>
+        </div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="products.html">Products</a></li><li><a href="news.html">News</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Services</h4><ul><li><a href="#">Agentforce</a></li><li><a href="#">Data Cloud</a></li><li><a href="#">SF Development</a></li><li><a href="#">ISV AppExchange</a></li></ul></div>
+        <div class="footer-col"><h4>Connect</h4><ul><li><a href="mailto:info@nexavoai.com">info@nexavoai.com</a></li><li><a href="contact.html">Book a Demo</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Nexavo AI. All rights reserved.</p>
+        <div style="display:flex;gap:24px;"><a href="#" style="font-size:13px;color:var(--text-muted);">Privacy</a><a href="#" style="font-size:13px;color:var(--text-muted);">Terms</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Category filter
+    document.querySelectorAll('.category-pill').forEach(pill => {
+      pill.addEventListener('click', function() {
+        document.querySelectorAll('.category-pill').forEach(p => p.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
