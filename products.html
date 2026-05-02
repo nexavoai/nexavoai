@@ -2,102 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Nexavo AI — Salesforce solutions, automation, and enterprise applications." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Solutions — Nexavo AI</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
 
-<!-- NAV -->
-<nav class="nav" id="nav">
-  <div class="container">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <div class="logo-mark">N</div>
-        Nexavo <span class="text-accent">AI</span>
-      </a>
+<!-- NAVBAR -->
+<nav class="nav">
+  <div class="container nav-inner">
 
-      <ul class="nav-links">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="products.html" class="nav-link active">Solutions</a></li>
-        <li><a href="news.html" class="nav-link">News</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
-      </ul>
-
-      <div class="nav-cta">
-        <a href="contact.html" class="btn btn-primary">Book a Demo →</a>
-        <button class="hamburger" id="hamburger">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
+    <div class="nav-logo">
+      <div class="logo-mark">N</div>
+      Nexavo AI
     </div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html" class="active">Solutions</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <a href="contact.html" class="btn btn-primary">Book Call</a>
+
   </div>
 </nav>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html" class="nav-link">Home</a>
-  <a href="about.html" class="nav-link">About</a>
-  <a href="products.html" class="nav-link">Solutions</a>
-  <a href="news.html" class="nav-link">News</a>
-  <a href="contact.html" class="nav-link">Contact</a>
-</div>
-
 <!-- HERO -->
-<section class="page-hero">
-  <div class="container" style="text-align:center;max-width:720px;">
-    <div class="section-label" style="justify-content:center;">
-      <span>Salesforce Solutions</span>
-    </div>
+<section class="hero">
+  <div class="container">
 
-    <h1 class="display-xl mb-24">
+    <h1>
       Salesforce Solutions &<br>
-      <span class="gradient-text">Enterprise Applications</span>
+      <span class="highlight">Enterprise Applications</span>
     </h1>
 
-    <p class="body-lg text-muted">
-      We design and build Salesforce-native solutions — from automation and integrations to scalable AppExchange applications.
-      Select products are in private development with early access partners.
+    <p>
+      We design and build scalable Salesforce-native solutions — from automation to AppExchange products.
     </p>
+
+    <a href="contact.html" class="btn btn-primary">
+      Discuss Your Use Case
+    </a>
+
   </div>
 </section>
 
-<!-- CORE OFFERINGS -->
+<!-- WHAT WE BUILD -->
 <section class="section">
   <div class="container">
 
-    <div style="max-width:800px;margin-bottom:60px;">
-      <h2 class="display-lg mb-16">What We Build</h2>
-      <p class="body-lg text-muted">
-        We focus on solving real operational problems inside Salesforce — not just building features.
-        Every solution is designed for scalability, maintainability, and measurable business impact.
-      </p>
-    </div>
+    <h2>What We Build</h2>
 
     <div class="grid-3">
 
       <div class="card">
-        <h3 class="display-sm">Automation & Workflows</h3>
-        <p class="body-sm text-muted">
-          Reduce manual work with process automation built directly inside Salesforce using Apex, Flows, and custom logic.
-        </p>
+        <h3>Automation & Workflows</h3>
+        <p>Reduce manual work using Agentforce, Data Cloud, Apex, Flows, and scalable logic.</p>
       </div>
 
       <div class="card">
-        <h3 class="display-sm">Integrations & Communication</h3>
-        <p class="body-sm text-muted">
-          Connect Salesforce with external platforms such as messaging, APIs, and enterprise systems for seamless operations.
-        </p>
+        <h3>Integrations & Communication</h3>
+        <p>Connect Salesforce with external systems, APIs, and messaging platforms.</p>
       </div>
 
       <div class="card">
-        <h3 class="display-sm">AI & Data Capabilities</h3>
-        <p class="body-sm text-muted">
-          Implement intelligent features like summarization, recommendations, and insights — only where they add real value.
-        </p>
+        <h3>AI & Data Capabilities</h3>
+        <p>Implement intelligent features only where they add real value.</p>
       </div>
 
     </div>
@@ -109,32 +83,32 @@
 <section class="section">
   <div class="container">
 
-    <div class="section-label"><span>Applications</span></div>
+    <h2>Applications</h2>
 
-    <div class="grid-3" style="margin-top:32px;gap:24px;">
+    <div class="grid-3">
 
-      <div class="product-card">
-        <h3 class="display-sm">Salesforce Automation Apps</h3>
-        <p class="body-sm text-muted">
-          Pre-built and customizable applications designed to streamline operations and improve productivity.
-        </p>
-        <a href="contact.html" class="btn btn-secondary w-full" style="justify-content:center;">Learn More</a>
+      <div class="card">
+        <h3>Salesforce Automation Apps</h3>
+        <p>Pre-built and customizable apps to streamline business operations.</p>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:15px;">
+          Learn More
+        </a>
       </div>
 
-      <div class="product-card">
-        <h3 class="display-sm">Enterprise Integrations</h3>
-        <p class="body-sm text-muted">
-          Build reliable integrations between Salesforce and third-party systems including communication and data platforms.
-        </p>
-        <a href="contact.html" class="btn btn-secondary w-full" style="justify-content:center;">Discuss Use Case</a>
+      <div class="card">
+        <h3>Enterprise Integrations</h3>
+        <p>Reliable integrations between Salesforce and third-party platforms.</p>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:15px;">
+          Discuss Use Case
+        </a>
       </div>
 
-      <div class="product-card">
-        <h3 class="display-sm">Custom ISV Development</h3>
-        <p class="body-sm text-muted">
-          End-to-end AppExchange product development — from idea validation to managed package and launch.
-        </p>
-        <a href="contact.html" class="btn btn-secondary w-full" style="justify-content:center;">Start Project</a>
+      <div class="card">
+        <h3>Custom ISV Development</h3>
+        <p>End-to-end AppExchange product development and launch support.</p>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:15px;">
+          Start Project
+        </a>
       </div>
 
     </div>
@@ -142,88 +116,39 @@
   </div>
 </section>
 
-<!-- CUSTOM ISV -->
-<section class="section" style="background:var(--bg-surface);">
+<!-- ISV SECTION -->
+<section class="section">
   <div class="container">
 
-    <div class="grid-2">
+    <h2>Have a Product Idea?</h2>
 
-      <div>
-        <div class="section-label"><span>Custom ISV</span></div>
-        <h2 class="display-lg mb-24">Have a Product Idea?<br>We'll Build It.</h2>
+    <p style="max-width:700px;color:#bbb;">
+      We help founders and businesses turn Salesforce ideas into real AppExchange products —
+      from validation to launch.
+    </p>
 
-        <p class="body-lg text-muted mb-32">
-          We help founders and businesses turn Salesforce product ideas into real, scalable AppExchange applications.
-        </p>
-
-        <ul style="display:flex;flex-direction:column;gap:12px;">
-          <li>✔ Product strategy & validation</li>
-          <li>✔ Managed package development</li>
-          <li>✔ Security review preparation</li>
-          <li>✔ AppExchange launch support</li>
-        </ul>
-
-        <div style="margin-top:30px;">
-          <a href="contact.html" class="btn btn-primary">Talk to Us</a>
-        </div>
-      </div>
-
-      <div>
-        <div class="card">
-          <h4 class="mb-16">Typical Engagement</h4>
-          <p class="body-sm text-muted">Discovery → Build → Security → Launch</p>
-        </div>
-      </div>
-
+    <div style="margin-top:20px;">
+      <ul style="color:#bbb; line-height:1.8;">
+        <li>✔ Product strategy & validation</li>
+        <li>✔ Managed package development</li>
+        <li>✔ Security review preparation</li>
+        <li>✔ AppExchange launch support</li>
+      </ul>
     </div>
+
+    <a href="contact.html" class="btn btn-primary" style="margin-top:20px;">
+      Talk to Us
+    </a>
 
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-
-      <div>
-        <h4>Nexavo AI</h4>
-        <p>Salesforce solutions and enterprise applications built for scale.</p>
-      </div>
-
-      <div>
-        <h4>Company</h4>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="products.html">Solutions</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#">Automation</a></li>
-          <li><a href="#">Integrations</a></li>
-          <li><a href="#">ISV Development</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="mailto:info@nexavoai.com">info@nexavoai.com</a></li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      © 2026 Nexavo AI. All rights reserved.
-    </div>
-  </div>
+  <p><strong>Nexavo AI</strong></p>
+  <p>Salesforce solutions & ISV product development</p>
+  <p>Email: info@nexavoai.com</p>
 </footer>
-
-<script src="main.js"></script>
 
 </body>
 </html>
