@@ -3,369 +3,227 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Nexavo AI Products — AppExchange applications built for intelligent Salesforce orgs." />
-  <title>Products — Nexavo AI</title>
+  <meta name="description" content="Nexavo AI — Salesforce solutions, automation, and enterprise applications." />
+  <title>Solutions — Nexavo AI</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'><rect width='36' height='36' rx='10' fill='url(%23g)'/><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%2300D4FF'/><stop offset='1' stop-color='%236366F1'/></linearGradient></defs><text x='8' y='26' font-size='20' font-weight='900' fill='white' font-family='sans-serif'>N</text></svg>" />
 </head>
+
 <body>
 
-  <!-- NAV -->
-  <nav class="nav" id="nav">
-    <div class="container">
-      <div class="nav-inner">
-        <a href="index.html" class="nav-logo">
-          <div class="logo-mark">N</div>
-          Nexavo <span class="text-accent">AI</span>
-        </a>
-        <ul class="nav-links">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="products.html" class="nav-link">Products</a></li>
-          <li><a href="news.html" class="nav-link">News</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
-        <div class="nav-cta">
-          <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
-          <a href="contact.html" class="btn btn-primary">Book a Demo →</a>
-          <button class="hamburger" id="hamburger" aria-label="Menu">
-            <span></span><span></span><span></span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </nav>
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-mark">N</div>
+        Nexavo <span class="text-accent">AI</span>
+      </a>
 
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="about.html" class="nav-link">About</a>
-    <a href="products.html" class="nav-link">Products</a>
-    <a href="news.html" class="nav-link">News</a>
-    <a href="contact.html" class="nav-link">Contact</a>
-    <div style="margin-top:20px;display:flex;flex-direction:column;gap:12px;width:100%;max-width:280px;">
-      <a href="contact.html" class="btn btn-secondary btn-lg w-full" style="justify-content:center;">Get in Touch</a>
-      <a href="contact.html" class="btn btn-primary btn-lg w-full" style="justify-content:center;">Book a Demo →</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="products.html" class="nav-link active">Solutions</a></li>
+        <li><a href="news.html" class="nav-link">News</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-primary">Book a Demo →</a>
+        <button class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </div>
+</nav>
 
-  <!-- PAGE HERO -->
-  <section class="page-hero" style="position:relative;overflow:hidden;">
-    <div class="grid-bg"></div>
-    <div class="orb orb-indigo" style="width:500px;height:500px;top:-100px;right:-100px;opacity:0.5;"></div>
-    <div class="container">
-      <div style="text-align:center;max-width:700px;margin:0 auto;">
-        <div class="section-label" style="justify-content:center;animation:fadeSlideUp 0.5s ease both;">
-          <span>AppExchange Products</span>
-        </div>
-        <h1 class="display-xl mb-24" style="animation:fadeSlideUp 0.5s 0.1s ease both;">
-          AI Products Built for<br>
-          <span class="gradient-text">Salesforce-Native Teams</span>
-        </h1>
-        <p class="body-lg text-muted" style="animation:fadeSlideUp 0.5s 0.2s ease both;max-width:560px;margin:0 auto 40px;">
-          We're building the next generation of AppExchange applications — intelligent, composable, and designed to make your Salesforce org a thinking machine.
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" class="nav-link">Home</a>
+  <a href="about.html" class="nav-link">About</a>
+  <a href="products.html" class="nav-link">Solutions</a>
+  <a href="news.html" class="nav-link">News</a>
+  <a href="contact.html" class="nav-link">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container" style="text-align:center;max-width:720px;">
+    <div class="section-label" style="justify-content:center;">
+      <span>Salesforce Solutions</span>
+    </div>
+
+    <h1 class="display-xl mb-24">
+      Salesforce Solutions &<br>
+      <span class="gradient-text">Enterprise Applications</span>
+    </h1>
+
+    <p class="body-lg text-muted">
+      We design and build Salesforce-native solutions — from automation and integrations to scalable AppExchange applications.
+      Select products are in private development with early access partners.
+    </p>
+  </div>
+</section>
+
+<!-- CORE OFFERINGS -->
+<section class="section">
+  <div class="container">
+
+    <div style="max-width:800px;margin-bottom:60px;">
+      <h2 class="display-lg mb-16">What We Build</h2>
+      <p class="body-lg text-muted">
+        We focus on solving real operational problems inside Salesforce — not just building features.
+        Every solution is designed for scalability, maintainability, and measurable business impact.
+      </p>
+    </div>
+
+    <div class="grid-3">
+
+      <div class="card">
+        <h3 class="display-sm">Automation & Workflows</h3>
+        <p class="body-sm text-muted">
+          Reduce manual work with process automation built directly inside Salesforce using Apex, Flows, and custom logic.
         </p>
-        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.25);border-radius:100px;padding:8px 20px;animation:fadeSlideUp 0.5s 0.3s ease both;">
-          <div style="width:8px;height:8px;border-radius:50%;background:var(--cyan);animation:pulse 2s infinite;"></div>
-          <span style="font-family:var(--font-mono);font-size:12px;color:var(--cyan);">Products in active development — Early access available</span>
-        </div>
       </div>
+
+      <div class="card">
+        <h3 class="display-sm">Integrations & Communication</h3>
+        <p class="body-sm text-muted">
+          Connect Salesforce with external platforms such as messaging, APIs, and enterprise systems for seamless operations.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3 class="display-sm">AI & Data Capabilities</h3>
+        <p class="body-sm text-muted">
+          Implement intelligent features like summarization, recommendations, and insights — only where they add real value.
+        </p>
+      </div>
+
     </div>
-  </section>
 
-  <!-- FEATURED PRODUCT -->
-  <section class="section">
-    <div class="container">
-      <div class="section-label reveal"><span>Flagship Product</span></div>
+  </div>
+</section>
 
-      <div style="background:var(--bg-surface);border:1px solid rgba(0,212,255,0.2);border-radius:var(--radius-xl);overflow:hidden;margin-bottom:80px;" class="featured-product reveal">
-        <div class="product-feature-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:0;">
-          <div class="product-feature-copy" style="padding:60px;">
-            <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;">
-              <div style="width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,var(--cyan),var(--indigo));display:flex;align-items:center;justify-content:center;">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-              </div>
-              <div>
-                <div class="tag tag-cyan" style="margin-bottom:6px;">Coming Soon Q3 2026</div>
-              </div>
-            </div>
-            <h2 class="display-md mb-16">Nexavo Deal Intelligence</h2>
-            <p class="body-lg text-muted mb-32">
-              An AI-powered opportunity scoring and next-best-action engine for Sales Cloud. Transform your pipeline from guesswork into a precision science. Every opportunity gets an AI-calculated win probability, risk factor analysis, and personalized action recommendations.
-            </p>
+<!-- APPLICATIONS -->
+<section class="section">
+  <div class="container">
 
-            <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:40px;">
-              <div style="display:flex;gap:14px;align-items:flex-start;">
-                <div style="width:20px;height:20px;border-radius:50%;background:var(--cyan-dim);border:1px solid rgba(0,212,255,0.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
-                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <p class="body-md text-muted">Real-time win probability scoring based on 50+ CRM signals</p>
-              </div>
-              <div style="display:flex;gap:14px;align-items:flex-start;">
-                <div style="width:20px;height:20px;border-radius:50%;background:var(--cyan-dim);border:1px solid rgba(0,212,255,0.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
-                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <p class="body-md text-muted">Next-best-action recommendations powered by Einstein and GPT</p>
-              </div>
-              <div style="display:flex;gap:14px;align-items:flex-start;">
-                <div style="width:20px;height:20px;border-radius:50%;background:var(--cyan-dim);border:1px solid rgba(0,212,255,0.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
-                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <p class="body-md text-muted">Pipeline health monitoring with proactive risk alerts</p>
-              </div>
-              <div style="display:flex;gap:14px;align-items:flex-start;">
-                <div style="width:20px;height:20px;border-radius:50%;background:var(--cyan-dim);border:1px solid rgba(0,212,255,0.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
-                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <p class="body-md text-muted">Zero-code setup — installs in under 30 minutes</p>
-              </div>
-            </div>
+    <div class="section-label"><span>Applications</span></div>
 
-            <div style="display:flex;gap:12px;">
-              <a href="contact.html" class="btn btn-primary btn-lg">Join Early Access</a>
-              <a href="contact.html" class="btn btn-secondary btn-lg">Request Demo</a>
-            </div>
-          </div>
+    <div class="grid-3" style="margin-top:32px;gap:24px;">
 
-          <!-- Visual -->
-          <div class="product-visual-panel" style="background:var(--bg-elevated);border-left:1px solid var(--border-subtle);padding:40px;display:flex;align-items:center;justify-content:center;">
-            <div style="width:100%;max-width:380px;">
-              <div style="background:var(--bg-surface);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:24px;margin-bottom:16px;">
-                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
-                  <p style="font-family:var(--font-mono);font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;">Opportunity Score</p>
-                  <span class="tag tag-cyan">Live</span>
-                </div>
-                <div style="display:flex;align-items:flex-end;gap:16px;margin-bottom:20px;">
-                  <div class="stat-number" style="font-size:56px;">87</div>
-                  <div>
-                    <p style="font-size:12px;color:#10B981;margin-bottom:4px;">↑ +14 this week</p>
-                    <p class="body-sm text-muted">Win probability</p>
-                  </div>
-                </div>
-                <div style="height:6px;background:var(--bg-elevated);border-radius:3px;overflow:hidden;">
-                  <div style="width:87%;height:100%;background:linear-gradient(90deg,var(--cyan),var(--indigo));border-radius:3px;"></div>
-                </div>
-              </div>
-
-              <div style="background:var(--bg-surface);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:20px;">
-                <p style="font-family:var(--font-mono);font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:14px;">AI Recommendations</p>
-                <div style="display:flex;flex-direction:column;gap:10px;">
-                  <div style="display:flex;gap:10px;align-items:flex-start;padding:10px;background:rgba(0,212,255,0.05);border:1px solid rgba(0,212,255,0.1);border-radius:8px;">
-                    <div style="width:6px;height:6px;border-radius:50%;background:var(--cyan);margin-top:5px;flex-shrink:0;"></div>
-                    <p style="font-size:13px;">Send personalized ROI analysis to economic buyer</p>
-                  </div>
-                  <div style="display:flex;gap:10px;align-items:flex-start;padding:10px;background:var(--bg-elevated);border:1px solid var(--border-subtle);border-radius:8px;">
-                    <div style="width:6px;height:6px;border-radius:50%;background:var(--indigo);margin-top:5px;flex-shrink:0;"></div>
-                    <p style="font-size:13px;">Schedule technical deep-dive within 3 days</p>
-                  </div>
-                  <div style="display:flex;gap:10px;align-items:flex-start;padding:10px;background:var(--bg-elevated);border:1px solid var(--border-subtle);border-radius:8px;">
-                    <div style="width:6px;height:6px;border-radius:50%;background:#A855F7;margin-top:5px;flex-shrink:0;"></div>
-                    <p style="font-size:13px;">Flag budget approval risk — 60-day cycle</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="product-card">
+        <h3 class="display-sm">Salesforce Automation Apps</h3>
+        <p class="body-sm text-muted">
+          Pre-built and customizable applications designed to streamline operations and improve productivity.
+        </p>
+        <a href="contact.html" class="btn btn-secondary w-full" style="justify-content:center;">Learn More</a>
       </div>
 
-      <!-- PRODUCT GRID -->
-      <div class="section-label reveal"><span>Full Product Roadmap</span></div>
-
-      <div class="grid-3" style="gap:24px;margin-top:32px;">
-        <!-- Product 2 -->
-        <div class="product-card reveal">
-          <div class="product-badge">Beta Q4 2026</div>
-          <div class="product-card-header">
-            <div style="width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,rgba(99,102,241,0.3),rgba(168,85,247,0.3));border:1px solid rgba(99,102,241,0.3);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
-            </div>
-            <h3 class="display-sm" style="font-size:22px;margin-bottom:8px;">Nexavo Data Pulse</h3>
-            <p class="body-sm text-muted">Real-time data quality monitoring and automated enrichment for Data Cloud orgs</p>
-          </div>
-          <div class="product-card-body">
-            <ul style="display:flex;flex-direction:column;gap:8px;margin-bottom:24px;">
-              <li style="display:flex;gap:8px;font-size:14px;color:var(--text-secondary);">
-                <span style="color:var(--indigo);">→</span> Automated data quality scoring across all objects
-              </li>
-              <li style="display:flex;gap:8px;font-size:14px;color:var(--text-secondary);">
-                <span style="color:var(--indigo);">→</span> Real-time enrichment from 40+ data providers
-              </li>
-              <li style="display:flex;gap:8px;font-size:14px;color:var(--text-secondary);">
-                <span style="color:var(--indigo);">→</span> Identity resolution with AI deduplication
-              </li>
-              <li style="display:flex;gap:8px;font-size:14px;color:var(--text-secondary);">
-                <span style="color:var(--indigo);">→</span> Executive data health dashboard
-              </li>
-            </ul>
-            <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px;">
-              <span class="tag tag-indigo">Data Cloud</span>
-              <span class="tag tag-white">CDP</span>
-              <span class="tag tag-white">Quality</span>
-            </div>
-            <a href="contact.html" class="btn btn-secondary w-full" style="justify-content:center;">Join Waitlist</a>
-          </div>
-        </div>
-
-        <!-- Product 3 -->
-        <div class="product-card reveal reveal-delay-1">
-          <div class="product-badge">2026</div>
-          <div class="product-card-header">
-            <div style="width:44px;height:44px;border-radius:12px;background:rgba(168,85,247,0.15);border:1px solid rgba(168,85,247,0.25);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A855F7" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            </div>
-            <h3 class="display-sm" style="font-size:22px;margin-bottom:8px;">Nexavo Agent Studio</h3>
-            <p class="body-sm text-muted">No-code Agentforce builder for enterprise AI agent deployment across any cloud</p>
-          </div>
-          <div class="product-card-body">
-            <ul style="display:flex;flex-direction:column;gap:8px;margin-bottom:24px;">
-              <li style="display:flex;gap:8px;font-size:14px;color:var(--text-secondary);">
-                <span style="color:#A855F7;">→</span> Visual agent workflow designer
-              </li>
-              <li style="display:flex;gap:8px;font-size:14px;color:var(--text-secondary);">
-                <span style="color:#A855F7;">→</span> Pre-built agent templates by industry
-              </li>
-              <li style="display:flex;gap:8px;font-size:14px;color:var(--text-secondary);">
-                <span style="color:#A855F7;">→</span> Multi-agent orchestration engine
-              </li>
-              <li style="display:flex;gap:8px;font-size:14px;color:var(--text-secondary);">
-                <span style="color:#A855F7;">→</span> Enterprise governance and audit logs
-              </li>
-            </ul>
-            <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px;">
-              <span class="tag tag-white">Agentforce</span>
-              <span class="tag tag-white">No-code</span>
-              <span class="tag tag-white">Enterprise</span>
-            </div>
-            <a href="contact.html" class="btn btn-secondary w-full" style="justify-content:center;">Get Notified</a>
-          </div>
-        </div>
-
-        <!-- Product 4 -->
-        <div class="product-card reveal reveal-delay-2">
-          <div class="product-badge">Roadmap</div>
-          <div class="product-card-header">
-            <div style="width:44px;height:44px;border-radius:12px;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <h3 class="display-sm" style="font-size:22px;margin-bottom:8px;">Nexavo Compliance Guard</h3>
-            <p class="body-sm text-muted">Automated Salesforce governance and compliance monitoring for regulated industries</p>
-          </div>
-          <div class="product-card-body">
-            <ul style="display:flex;flex-direction:column;gap:8px;margin-bottom:24px;">
-              <li style="display:flex;gap:8px;font-size:14px;color:var(--text-secondary);">
-                <span style="color:#10B981;">→</span> GDPR, HIPAA, SOC2 compliance checks
-              </li>
-              <li style="display:flex;gap:8px;font-size:14px;color:var(--text-secondary);">
-                <span style="color:#10B981;">→</span> Real-time security posture monitoring
-              </li>
-              <li style="display:flex;gap:8px;font-size:14px;color:var(--text-secondary);">
-                <span style="color:#10B981;">→</span> Automated remediation workflows
-              </li>
-              <li style="display:flex;gap:8px;font-size:14px;color:var(--text-secondary);">
-                <span style="color:#10B981;">→</span> Executive compliance reporting
-              </li>
-            </ul>
-            <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px;">
-              <span class="tag tag-white">Compliance</span>
-              <span class="tag tag-white">Security</span>
-              <span class="tag tag-white">GDPR</span>
-            </div>
-            <a href="contact.html" class="btn btn-secondary w-full" style="justify-content:center;">Get Notified</a>
-          </div>
-        </div>
+      <div class="product-card">
+        <h3 class="display-sm">Enterprise Integrations</h3>
+        <p class="body-sm text-muted">
+          Build reliable integrations between Salesforce and third-party systems including communication and data platforms.
+        </p>
+        <a href="contact.html" class="btn btn-secondary w-full" style="justify-content:center;">Discuss Use Case</a>
       </div>
+
+      <div class="product-card">
+        <h3 class="display-sm">Custom ISV Development</h3>
+        <p class="body-sm text-muted">
+          End-to-end AppExchange product development — from idea validation to managed package and launch.
+        </p>
+        <a href="contact.html" class="btn btn-secondary w-full" style="justify-content:center;">Start Project</a>
+      </div>
+
     </div>
-  </section>
 
-  <!-- CUSTOM DEVELOPMENT -->
-  <section class="section" style="background:var(--bg-surface);border-top:1px solid var(--border-subtle);">
-    <div class="container">
-      <div class="grid-2" style="gap:80px;align-items:center;">
-        <div class="reveal">
-          <div class="section-label"><span>Custom ISV</span></div>
-          <h2 class="display-lg mb-24">Have a Product Idea?<br>We'll Build It.</h2>
-          <p class="body-lg text-muted mb-32">
-            Beyond our own product suite, we're an expert AppExchange ISV development partner. If you have a Salesforce product idea, we can take it from napkin to AppExchange listing.
-          </p>
-          <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:40px;">
-            <div style="display:flex;gap:16px;align-items:center;">
-              <div style="width:36px;height:36px;border-radius:8px;background:var(--cyan-dim);border:1px solid rgba(0,212,255,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:var(--font-mono);font-size:12px;color:var(--cyan);font-weight:600;">01</div>
-              <p class="body-md">Product strategy & market validation</p>
-            </div>
-            <div style="display:flex;gap:16px;align-items:center;">
-              <div style="width:36px;height:36px;border-radius:8px;background:var(--cyan-dim);border:1px solid rgba(0,212,255,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:var(--font-mono);font-size:12px;color:var(--cyan);font-weight:600;">02</div>
-              <p class="body-md">Managed package architecture & development</p>
-            </div>
-            <div style="display:flex;gap:16px;align-items:center;">
-              <div style="width:36px;height:36px;border-radius:8px;background:var(--cyan-dim);border:1px solid rgba(0,212,255,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:var(--font-mono);font-size:12px;color:var(--cyan);font-weight:600;">03</div>
-              <p class="body-md">Salesforce security review preparation</p>
-            </div>
-            <div style="display:flex;gap:16px;align-items:center;">
-              <div style="width:36px;height:36px;border-radius:8px;background:var(--cyan-dim);border:1px solid rgba(0,212,255,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:var(--font-mono);font-size:12px;color:var(--cyan);font-weight:600;">04</div>
-              <p class="body-md">AppExchange listing & go-to-market support</p>
-            </div>
-          </div>
-          <a href="contact.html" class="btn btn-primary btn-lg">Talk to Our ISV Team</a>
-        </div>
+  </div>
+</section>
 
-        <div class="reveal reveal-delay-2">
-          <div style="background:var(--bg-elevated);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:32px;">
-            <h4 style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:24px;">ISV Engagement Timeline</h4>
-            <div class="timeline">
-              <div class="timeline-item">
-                <p style="font-weight:600;margin-bottom:4px;">Week 1–2: Discovery & Architecture</p>
-                <p class="body-sm text-muted">Requirements gathering, technical architecture design, and data model planning</p>
-              </div>
-              <div class="timeline-item">
-                <p style="font-weight:600;margin-bottom:4px;">Week 3–10: Core Development</p>
-                <p class="body-sm text-muted">Iterative sprints, managed package build, and weekly demos</p>
-              </div>
-              <div class="timeline-item">
-                <p style="font-weight:600;margin-bottom:4px;">Week 11–14: Security & QA</p>
-                <p class="body-sm text-muted">Security review readiness, performance testing, and UAT</p>
-              </div>
-              <div class="timeline-item" style="padding-bottom:0;">
-                <p style="font-weight:600;margin-bottom:4px;">Week 15+: AppExchange Launch</p>
-                <p class="body-sm text-muted">Listing creation, marketing assets, and go-to-market execution</p>
-              </div>
-            </div>
-          </div>
+<!-- CUSTOM ISV -->
+<section class="section" style="background:var(--bg-surface);">
+  <div class="container">
+
+    <div class="grid-2">
+
+      <div>
+        <div class="section-label"><span>Custom ISV</span></div>
+        <h2 class="display-lg mb-24">Have a Product Idea?<br>We'll Build It.</h2>
+
+        <p class="body-lg text-muted mb-32">
+          We help founders and businesses turn Salesforce product ideas into real, scalable AppExchange applications.
+        </p>
+
+        <ul style="display:flex;flex-direction:column;gap:12px;">
+          <li>✔ Product strategy & validation</li>
+          <li>✔ Managed package development</li>
+          <li>✔ Security review preparation</li>
+          <li>✔ AppExchange launch support</li>
+        </ul>
+
+        <div style="margin-top:30px;">
+          <a href="contact.html" class="btn btn-primary">Talk to Us</a>
         </div>
       </div>
+
+      <div>
+        <div class="card">
+          <h4 class="mb-16">Typical Engagement</h4>
+          <p class="body-sm text-muted">Discovery → Build → Security → Launch</p>
+        </div>
+      </div>
+
     </div>
-  </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="nav-logo" style="display:inline-flex;margin-bottom:16px;">
-            <div class="logo-mark">N</div>
-            Nexavo <span class="text-accent" style="margin-left:4px;">AI</span>
-          </a>
-          <p>AI-first Salesforce Solutions. We build intelligent CRM ecosystems powered by Data Cloud, Agentforce, and custom AI.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Company</h4>
-          <ul><li><a href="about.html">About Us</a></li><li><a href="products.html">Products</a></li><li><a href="news.html">News</a></li><li><a href="contact.html">Contact</a></li></ul>
-        </div>
-        <div class="footer-col">
-          <h4>Products</h4>
-          <ul><li><a href="products.html">Deal Intelligence</a></li><li><a href="products.html">Data Pulse</a></li><li><a href="products.html">Agent Studio</a></li><li><a href="products.html">Compliance Guard</a></li></ul>
-        </div>
-        <div class="footer-col">
-          <h4>Connect</h4>
-          <ul><li><a href="mailto:info@nexavoai.com">info@nexavoai.com</a></li><li><a href="contact.html">Book a Demo</a></li></ul>
-        </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div>
+        <h4>Nexavo AI</h4>
+        <p>Salesforce solutions and enterprise applications built for scale.</p>
       </div>
-      <div class="footer-bottom">
-        <p>© 2026 Nexavo AI. All rights reserved.</p>
-        <div style="display:flex;gap:24px;"><a style="font-size:13px;color:var(--text-muted);" aria-disabled="true">Privacy</a><a style="font-size:13px;color:var(--text-muted);" aria-disabled="true">Terms</a></div>
+
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Solutions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
+
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Automation</a></li>
+          <li><a href="#">Integrations</a></li>
+          <li><a href="#">ISV Development</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@nexavoai.com">info@nexavoai.com</a></li>
+        </ul>
+      </div>
+
     </div>
-  </footer>
 
-  <script src="main.js"></script>
+    <div class="footer-bottom">
+      © 2026 Nexavo AI. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+
 </body>
 </html>
