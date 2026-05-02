@@ -1,171 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Contact Nexavo AI for Salesforce development, automation, and ISV solutions." />
-  <title>Contact — Nexavo AI</title>
-  <link rel="stylesheet" href="style.css" />
+<title>Contact</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAV -->
 <nav class="nav">
-  <div class="container">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <div class="logo-mark">N</div>
-        Nexavo <span class="text-accent">AI</span>
-      </a>
+<div class="container nav-inner">
 
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Solutions</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
+<div class="nav-logo">Nexavo AI</div>
 
-      <a href="contact.html" class="btn btn-primary">Book a Call</a>
-    </div>
-  </div>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="contact.html">Contact</a>
+</div>
+
+</div>
 </nav>
 
-<!-- HERO -->
-<section class="page-hero">
-  <div class="container" style="max-width:700px;">
-    <h1 class="display-xl mb-24">Let’s Discuss Your Salesforce Needs</h1>
-
-    <p class="body-lg text-muted">
-      Share a few details about your requirement — we’ll get back with a clear next step.
-    </p>
-  </div>
-</section>
-
-<!-- CONTACT -->
 <section class="section">
-  <div class="container">
+<div class="container">
 
-    <div class="grid-2" style="gap:60px;">
+<h1>Contact Us</h1>
 
-      <!-- LEFT -->
-      <div>
-        <h2 class="display-lg mb-24">How We Can Help</h2>
+<form action="https://formspree.io/f/REPLACE_ID" method="POST">
 
-        <ul class="text-muted" style="display:flex;flex-direction:column;gap:12px;">
-          <li>✔ Salesforce development & customization</li>
-          <li>✔ Automation & integrations</li>
-          <li>✔ AppExchange product development</li>
-          <li>✔ Improving existing Salesforce systems</li>
-        </ul>
+<input type="text" name="name" placeholder="Name" required>
+<input type="email" name="email" placeholder="Email" required>
+<textarea name="message" placeholder="Message"></textarea>
 
-        <p style="margin-top:30px;" class="text-muted">
-          We typically respond within 24 hours.
-        </p>
-      </div>
+<button class="btn btn-primary">Send</button>
 
-      <!-- FORM -->
-      <div>
-        <form action="https://formspree.io/f/REPLACE_ID" method="POST">
+</form>
 
-          <div class="form-group">
-            <label>Name</label>
-            <input type="text" name="name" required />
-          </div>
-
-          <div class="form-group">
-            <label>Email</label>
-            <input type="email" name="email" required />
-          </div>
-
-          <div class="form-group">
-            <label>Project Type</label>
-            <select name="type">
-              <option>Salesforce Development</option>
-              <option>Integration</option>
-              <option>Automation</option>
-              <option>ISV Product</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label>Budget</label>
-            <select name="budget">
-              <option>₹50k – ₹1L</option>
-              <option>₹1L – ₹5L</option>
-              <option>₹5L+</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label>Message</label>
-            <textarea name="message" required></textarea>
-          </div>
-
-          <button class="btn btn-primary btn-xl" type="submit">
-            Send Message
-          </button>
-
-        </form>
-
-        <p class="text-muted" style="margin-top:12px;font-size:14px;">
-          Your information will remain confidential.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
+</div>
 </section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container">
-
-    <div class="footer-grid">
-
-      <div>
-        <h4>Nexavo AI</h4>
-        <p>Salesforce solutions and enterprise applications built for scale.</p>
-      </div>
-
-      <div>
-        <h4>Company</h4>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="products.html">Solutions</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#">Automation</a></li>
-          <li><a href="#">Integrations</a></li>
-          <li><a href="#">ISV Development</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="mailto:info@nexavoai.com">info@nexavoai.com</a></li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      © 2026 Nexavo AI. All rights reserved.
-    </div>
-
-  </div>
-</footer>
-
-<script src="main.js"></script>
 
 </body>
 </html>
