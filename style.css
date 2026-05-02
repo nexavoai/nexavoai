@@ -216,16 +216,28 @@ form textarea {
     grid-template-columns: 1fr;
   }
 
+  .nav-inner {
+    flex-wrap: wrap;
+    gap: 10px;
+    height: auto;
+    padding: 10px 0;
+  }
+
   .nav-links {
-    display: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 8px;
+    font-size: 13px;
   }
 
   .hero h1 {
     font-size: 30px;
   }
 
-  .hero {
-    padding-top: 120px;
+  .btn-primary {
+    padding: 8px 14px;
+    font-size: 13px;
   }
 }
 
