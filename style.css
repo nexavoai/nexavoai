@@ -909,6 +909,18 @@ h1, h2, h3, h4, h5 {
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
   .hero-visual { display: none; }
+  .stats-grid,
+  .certification-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .featured-post-grid,
+  .product-feature-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .product-visual-panel {
+    border-left: 0 !important;
+    border-top: 1px solid var(--border-subtle);
+  }
 }
 
 @media (max-width: 768px) {
@@ -917,6 +929,13 @@ h1, h2, h3, h4, h5 {
   .grid-2, .grid-3 { grid-template-columns: 1fr; }
   .grid-4 { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .dashboard-metrics,
+  .why-us-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .stats-grid {
+    gap: 24px !important;
+  }
   .cta-strip-inner { flex-direction: column; text-align: center; }
   .footer-bottom { flex-direction: column; text-align: center; }
   .hero-actions { flex-direction: column; align-items: flex-start; }
@@ -925,6 +944,10 @@ h1, h2, h3, h4, h5 {
 @media (max-width: 480px) {
   .btn-xl { padding: 14px 24px; font-size: 15px; }
   .card { padding: 24px; }
+  .stats-grid,
+  .certification-grid {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 /* ─── Utility ───────────────────────────────────────────── */
