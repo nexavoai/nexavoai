@@ -99,24 +99,52 @@
     contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       const btn = contactForm.querySelector('[type="submit"]');
+      const status = document.getElementById('formStatus');
       const originalText = btn.textContent;
+      const endpoint = contactForm.getAttribute('action');
 
-      btn.textContent = 'Sending…';
+      if (!endpoint || endpoint.includes('your-form-id')) {
+        if (status) {
+          status.textContent = 'Add your Formspree form ID in contact.html to enable submissions.';
+          status.className = 'form-status form-status-error';
+        }
+        return;
+      }
+
+      btn.textContent = 'Sending...';
       btn.disabled = true;
+      if (status) {
+        status.textContent = '';
+        status.className = 'form-status';
+      }
 
-      // Simulate async (replace with Formspree or backend endpoint)
-      await new Promise(r => setTimeout(r, 1500));
+      try {
+        const response = await fetch(endpoint, {
+          method: 'POST',
+          body: new FormData(contactForm),
+          headers: { Accept: 'application/json' }
+        });
 
-      // Success state
-      btn.textContent = '✓ Message Sent';
-      btn.style.background = '#10B981';
+        if (!response.ok) throw new Error('Formspree submission failed');
 
-      setTimeout(() => {
-        btn.textContent = originalText;
-        btn.disabled = false;
-        btn.style.background = '';
         contactForm.reset();
-      }, 3000);
+        btn.textContent = 'Message Sent';
+        if (status) {
+          status.textContent = 'Thanks. Your message has been sent.';
+          status.className = 'form-status form-status-success';
+        }
+      } catch (error) {
+        btn.textContent = originalText;
+        if (status) {
+          status.textContent = 'Something went wrong. Please email info@nexavoai.com.';
+          status.className = 'form-status form-status-error';
+        }
+      } finally {
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.disabled = false;
+        }, 2500);
+      }
     });
   }
 

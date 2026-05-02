@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Nexavo AI to discuss Salesforce AI, Data Cloud, Agentforce, and AppExchange product work." />
+  <title>Contact - Nexavo AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'><rect width='36' height='36' rx='10' fill='url(%23g)'/><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%2300D4FF'/><stop offset='1' stop-color='%236366F1'/></linearGradient></defs><text x='8' y='26' font-size='20' font-weight='900' fill='white' font-family='sans-serif'>N</text></svg>" />
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-mark">N</div>
+          Nexavo <span class="text-accent">AI</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="news.html" class="nav-link">News</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+          <a href="contact.html" class="btn btn-primary">Book a Demo →</a>
+          <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="products.html" class="nav-link">Products</a>
+    <a href="news.html" class="nav-link">News</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <div style="margin-top:20px;display:flex;flex-direction:column;gap:12px;width:100%;max-width:280px;">
+      <a href="contact.html" class="btn btn-secondary btn-lg w-full" style="justify-content:center;">Get in Touch</a>
+      <a href="contact.html" class="btn btn-primary btn-lg w-full" style="justify-content:center;">Book a Demo →</a>
+    </div>
+  </div>
+
+  <section class="page-hero contact-hero">
+    <div class="grid-bg"></div>
+    <div class="orb orb-cyan" style="width:520px;height:520px;top:-120px;right:-80px;opacity:0.5;"></div>
+    <div class="orb orb-indigo" style="width:420px;height:420px;bottom:-160px;left:-120px;opacity:0.35;"></div>
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-copy reveal">
+          <div class="section-label"><span>Contact</span></div>
+          <h1 class="display-xl mb-24">Let's build your intelligent Salesforce edge.</h1>
+          <p class="body-lg text-muted mb-32">
+            Tell us what you are building, where your org is today, and what kind of outcome you want. We will come back with a clear next step.
+          </p>
+          <div class="contact-highlights">
+            <div><span>01</span><p>AI strategy, Agentforce, and Data Cloud implementation</p></div>
+            <div><span>02</span><p>Custom Salesforce development and enterprise integrations</p></div>
+            <div><span>03</span><p>AppExchange product planning, buildout, and launch support</p></div>
+          </div>
+        </div>
+
+        <div class="contact-panel reveal reveal-delay-1">
+          <form id="contactForm" class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="hidden" name="_subject" value="New Nexavo AI website inquiry" />
+
+            <div class="form-group">
+              <label class="form-label" for="name">Name</label>
+              <input class="form-input" type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="you@company.com" autocomplete="email" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="budget">Budget</label>
+              <select class="form-select" id="budget" name="budget" required>
+                <option value="">Select a budget range</option>
+                <option value="Under $10k">Under $10k</option>
+                <option value="$10k - $25k">$10k - $25k</option>
+                <option value="$25k - $50k">$25k - $50k</option>
+                <option value="$50k - $100k">$50k - $100k</option>
+                <option value="$100k+">$100k+</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Tell us about your Salesforce goals, timeline, and current blockers." required></textarea>
+            </div>
+
+            <button class="btn btn-primary btn-lg w-full" type="submit">Send Message</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="display:inline-flex;margin-bottom:16px;">
+            <div class="logo-mark">N</div>
+            Nexavo <span class="text-accent" style="margin-left:4px;">AI</span>
+          </a>
+          <p>AI-first Salesforce Solutions. We build intelligent CRM ecosystems powered by Data Cloud, Agentforce, and custom AI.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul><li><a href="about.html">About Us</a></li><li><a href="products.html">Products</a></li><li><a href="news.html">News</a></li><li><a href="contact.html">Contact</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul><li><a href="index.html#services">Agentforce</a></li><li><a href="index.html#services">Data Cloud</a></li><li><a href="index.html#services">SF Development</a></li><li><a href="products.html">ISV AppExchange</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul><li><a href="mailto:info@nexavoai.com">info@nexavoai.com</a></li><li><a href="contact.html">Book a Demo</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Nexavo AI. All rights reserved.</p>
+        <div style="display:flex;gap:24px;"><a style="font-size:13px;color:var(--text-muted);" aria-disabled="true">Privacy</a><a style="font-size:13px;color:var(--text-muted);" aria-disabled="true">Terms</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
