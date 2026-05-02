@@ -209,38 +209,60 @@ form textarea {
   margin-top: 60px;
 }
 
-/* ================= RESPONSIVE ================= */
-@media(max-width: 768px){
+/* ================= MOBILE FIX ================= */
+@media (max-width: 768px) {
 
-  .grid-3 {
-    grid-template-columns: 1fr;
-  }
-
+  /* NAV STACK FIX */
   .nav-inner {
-    flex-wrap: wrap;
-    gap: 10px;
+    flex-direction: column;
+    align-items: center;
     height: auto;
     padding: 10px 0;
   }
 
-  .nav-links {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    margin-top: 8px;
-    font-size: 13px;
+  .nav-logo {
+    margin-bottom: 6px;
   }
 
-  .hero h1 {
-    font-size: 30px;
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+    gap: 0;
+  }
+
+  .nav-links a {
+    font-size: 13px;
   }
 
   .btn-primary {
+    margin-top: 8px;
     padding: 8px 14px;
     font-size: 13px;
   }
+
+  /* HERO */
+  .hero {
+    padding-top: 170px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  /* GRID STACK */
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
 }
 
+/* ================= FORM STATUS ================= */
 #form-status {
   margin-top: 15px;
   font-size: 14px;
