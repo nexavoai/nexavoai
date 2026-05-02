@@ -1,50 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Contact</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Nexavo AI</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- NAV -->
 <nav class="nav">
-<div class="container nav-inner">
+  <div class="container nav-inner">
 
-<div class="nav-logo">
-<div class="logo-mark">N</div>
-Nexavo AI
-</div>
+    <div class="nav-logo">
+      <div class="logo-mark">N</div>
+      Nexavo AI
+    </div>
 
-<div class="nav-links">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="products.html">Solutions</a>
-<a href="news.html">News</a>
-<a href="contact.html">Contact</a>
-</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Solutions</a>
+      <a href="news.html">News</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
 
-<a href="contact.html" class="btn btn-primary">Book Call</a>
+    <a href="contact.html" class="btn btn-primary">Book Call</a>
 
-</div>
+  </div>
 </nav>
 
-<section class="section">
-<div class="container">
+<!-- CONTACT SECTION -->
+<section class="section" style="padding-top:120px;">
+  <div class="container" style="max-width:700px;">
 
-<h1>Contact Us</h1>
+    <h1 style="margin-bottom:10px;">Contact Us</h1>
+    <p class="text-muted" style="margin-bottom:30px;">
+      Tell us about your requirement — we’ll respond within 24 hours.
+    </p>
 
-<form action="https://formspree.io/f/REPLACE_ID" method="POST">
+    <!-- FORM -->
+    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
 
-<input type="text" name="name" placeholder="Name" required>
-<input type="email" name="email" placeholder="Email" required>
-<textarea name="message" placeholder="Message"></textarea>
+      <!-- REQUIRED -->
+      <input type="hidden" name="access_key" value="48df8850-9d94-44f6-aff1-01eaf1db3c6a">
 
-<button class="btn btn-primary">Send</button>
+      <!-- OPTIONAL -->
+      <input type="hidden" name="subject" value="New Lead from Nexavo AI">
+      <input type="hidden" name="from_name" value="Nexavo AI Website">
 
-</form>
+      <!-- FIELDS -->
+      <input type="text" name="name" placeholder="Your Name" required>
 
-</div>
+      <input type="email" name="email" placeholder="Your Email" required>
+
+      <select name="project_type" required>
+        <option value="">Select Project Type</option>
+        <option>Salesforce Development</option>
+        <option>Automation & Integration</option>
+        <option>ISV Product Development</option>
+      </select>
+
+      <select name="budget">
+        <option value="">Estimated Budget</option>
+        <option>Below ₹50K</option>
+        <option>₹50K – ₹2L</option>
+        <option>₹2L+</option>
+      </select>
+
+      <textarea name="message" placeholder="Describe your requirement..." required></textarea>
+
+      <button type="submit" class="btn btn-primary">Send Message</button>
+
+      <!-- STATUS -->
+      <p id="form-status" style="margin-top:15px;"></p>
+
+    </form>
+
+    <!-- WHATSAPP (HIGH CONVERSION)
+    <p style="margin-top:25px; text-align:center;">
+      Or message directly on 
+      <a href="https://wa.me/91XXXXXXXXXX" style="color:#38CFFB;">
+        WhatsApp
+      </a>
+    </p>  -->
+
+  </div>
 </section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p><strong>Nexavo AI</strong></p>
+    <p>Salesforce solutions & ISV product development</p>
+    <p>Email: info@nexavoai.com</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
 
 </body>
 </html>
